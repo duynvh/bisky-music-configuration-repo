@@ -1,4 +1,3 @@
-
 server:
   port: 7090
   servlet:
@@ -9,9 +8,9 @@ jwt:
       resource-id: authenticationClientId
 keycloak:
   realm: bisky-music
-  domain: keycloak.codewithbisky.com
+  domain: localhost:9081
   adminClientId: admin-cli
-  adminClientSecret: Sr2cryaesLrLsMO0vRNGEfgiwU8N9SKx
+  adminClientSecret: qudNJ1ou1MS4UnRZog77QsfBd6Zs7GlT
   client: authenticationClientId
   urls:
     auth: https://${keycloak.domain}
