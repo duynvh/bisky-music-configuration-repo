@@ -13,7 +13,7 @@ keycloak:
   adminClientSecret: qudNJ1ou1MS4UnRZog77QsfBd6Zs7GlT
   client: authenticationClientId
   urls:
-    auth: https://${keycloak.domain}
+    auth: http://${keycloak.domain}
 spring:
   profile:
     active: production
