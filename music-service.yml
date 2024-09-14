@@ -7,7 +7,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: https://${app.keycloak.domain}/realms/${app.keycloak.realm}
+          issuer-uri: http://${app.keycloak.domain}/realms/${app.keycloak.realm}
   neo4j:
     uri: bolt://localhost:7687
     authentication:
@@ -20,4 +20,4 @@ jwt:
 app:
   keycloak:
     realm: bisky-music
-    domain: keycloak.codewithbisky.com
+    domain: localhost:9081
