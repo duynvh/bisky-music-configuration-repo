@@ -17,7 +17,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: https://${app.keycloak.domain}/realms/${app.keycloak.realm}
+          issuer-uri: http://${app.keycloak.domain}/realms/${app.keycloak.realm}
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://${app.dbHostName}:${app.dbPort}/${app.dbName}?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=Europe/Rome&autoReconnect=true
