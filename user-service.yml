@@ -7,11 +7,11 @@ app:
   dbHostName: localhost
   dbPort: 3306
   dbUsername: root
-  dbPassword: slidenerd
+  dbPassword: 123456
   dbName: users_db
   keycloak:
     realm: bisky-music
-    domain: keycloak.codewithbisky.com
+    domain: localhost:9081
 spring:
   security:
     oauth2:
